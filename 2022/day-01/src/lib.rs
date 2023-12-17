@@ -1,6 +1,6 @@
 fn get_group_sum(input: &str) -> u32 {
     input
-        .split("\n")
+        .lines()
         .fold(0, |acc, cur| acc + cur.parse::<u32>().unwrap())
 }
 pub fn process_part1(input: &str) -> u32 {
