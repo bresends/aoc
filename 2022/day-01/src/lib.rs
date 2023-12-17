@@ -11,9 +11,7 @@ pub fn process_part1(input: &str) -> u32 {
 mod tests {
     use super::*;
 
-    #[test]
-    fn part_1_works() {
-        let input = "1000
+    const INPUT: &str = "1000
 2000
 3000
 
@@ -27,7 +25,10 @@ mod tests {
 9000
 
 10000";
-        let result = process_part1(input);
+
+    #[test]
+    fn part_1_works() {
+        let result = process_part1(INPUT);
         assert_eq!(result, 24000);
     }
 }
