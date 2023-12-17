@@ -12,7 +12,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
+    fn part_1_works() {
         let input = "1000
 2000
 3000
